@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #F8FAFC;
+  --surface: #FFFFFF;
+  --surface-raised: #F1F5F9;
+  --border: #E2E8F0;
+  --border-subtle: #F1F5F9;
+  --primary: #2563EB;
+  --primary-hover: #1D4ED8;
+  --text-primary: #0F172A;
+  --text-secondary: #64748B;
+  --text-muted: #94A3B8;
+  --success: #16A34A;
+  --warning: #D97706;
+  --error: #DC2626;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg);
+  color: var(--text-primary);
+}
+
+/* Typography Utility Classes */
+.font-oswald {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-geist {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-geist-mono {
+  font-family: 'Geist Mono', monospace;
+}
+
+/* Professional Surface Utility */
+.cinematic-surface {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+.cinematic-surface-hover:hover {
+  background: #F8FAFC;
+  border-color: #CBD5E1;
+}
+
+.glass-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* Professional Subtle Button Circle */
+.btn-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #E2E8F0;
+  background: #FFFFFF;
+  color: #475569;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.btn-circle:hover {
+  background: #F1F5F9;
+  border-color: #CBD5E1;
+  color: #0F172A;
+}
+
+/* Clean Professional Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Accessible focus ring */
+:focus-visible {
+  outline: 2px solid #2563EB;
+  outline-offset: 2px;
+}
+
